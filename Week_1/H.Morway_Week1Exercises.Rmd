@@ -60,6 +60,7 @@ I have created a vector (test_vector) of integers for you. Determine if any of x
 test_vector <- c(1,5,11:22)
 #x in test vector or y in test vector or z in test vector
 (x %in% test_vector) | (y %in% test_vector) | (z %in% test_vector)
+#####any((x %in% test_vector), (y %in% test_vector), (z %in% test_vector))
 ```
 
 # Exercise 6
@@ -72,5 +73,6 @@ Show which value is contained in the test vector. To do this you will need to cr
 indices <- (x == test_vector) | (y == test_vector) | (z == test_vector)
 #slice test vector for those values contained in indices variable
 test_vector[indices]
+####test_vector[(x == test_vector) | y == test_vector) | z == test_vector)]
 ```
 
